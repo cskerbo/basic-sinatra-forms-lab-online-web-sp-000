@@ -7,8 +7,8 @@
  <body>
 
 
- <% @team.collect do |player| %>
-     <h2>Team Name:<%= player %></h2>
+ <% @team.each do |player| %>
+     <h2>Team Name:<%= player.name %></h2>
  <% end %>
 
  </body>
